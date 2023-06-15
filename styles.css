@@ -193,9 +193,9 @@ textarea.input100 {
 
 .btn-outline-primary {
     --bs-btn-color: var(--bs-white);
-    --bs-btn-hover-bg: #6866a9;
-    --bs-btn-hover-border-color: #6866a9;
-    --bs-btn-border-color: #6866a9;
+    --bs-btn-hover-bg: #5653cb;
+    --bs-btn-hover-border-color: #5653cb;
+    --bs-btn-border-color: #5653cb;
     font-family: "Roboto", sans-serif;
     font-weight: 500;
 }
@@ -283,9 +283,11 @@ textarea.input100 {
     justify-content: center;
     align-items: center;
     float: left;
-    margin-left: 40px;
-    margin-right: 40px;
-    padding: 100px;
+    padding-top: 730px;
+    padding-bottom: 680px;
+    padding-left: 150px;
+    padding-right: 150px;
+    left: 0;
 }
 
 .float-child {
@@ -311,5 +313,27 @@ textarea.input100 {
 .cards {
     justify-content: center;
      align-items: stretch;
+    text-align: center !important;
+}
+
+
+.btn-outline-info {
+    --bs-btn-color: var(--bs-white);
+    --bs-btn-hover-bg: #B7CAFA;
+    --bs-btn-hover-border-color: #B7CAFA;
+    --bs-btn-border-color: #B7CAFA;
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+
+}
+
+.bg-danger {
+     background-color: #f9b3f5 !important;
+    color: #ffff;
+    
+}
+
+.bg-info {
+    background-color: #B7CAFA !important;
 }
 
