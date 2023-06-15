@@ -5,13 +5,13 @@
 }
 
 a{
-    color:aliceblue;
+    color:#000000;
     font-family: Roboto;
     font-weight: 500;
 }
 
 a:hover {
-     color:#f9b3f5;
+     color:#24215d;
     -webkit-transition: all 0.4s;
     -o-transition: all 0.4s;
     -moz-transition: all 0.4s;
