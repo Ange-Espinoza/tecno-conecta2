@@ -192,7 +192,7 @@ textarea.input100 {
 }
 
 .btn-outline-primary {
-    --bs-btn-color: var(--bs-white);
+    --bs-btn-color: var(--bs-black);
     --bs-btn-hover-bg: #2F2B91;
     --bs-btn-hover-border-color: #2F2B91;
     --bs-btn-border-color: #2F2B91;
