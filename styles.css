@@ -319,9 +319,9 @@ textarea.input100 {
 
 .btn-outline-info {
     --bs-btn-color: var(--bs-white);
-    --bs-btn-hover-bg: #B7CAFA;
-    --bs-btn-hover-border-color: #B7CAFA;
-    --bs-btn-border-color: #B7CAFA;
+    --bs-btn-hover-bg: #CBD9FB;
+    --bs-btn-hover-border-color: #CBD9FB;
+    --bs-btn-border-color: #CBD9FB;
     font-family: "Roboto", sans-serif;
     font-weight: 500;
 
@@ -334,5 +334,5 @@ textarea.input100 {
 }
 
 .bg-info {
-    background-color: #B7CAFA !important;
+    background-color: #CBD9FB !important;
 }
