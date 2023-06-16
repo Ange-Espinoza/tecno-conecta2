@@ -277,16 +277,20 @@
                             ¡Contáctanos!
                         </span>
                     </span>
+                     <label hidden="hidden" id="labelnombre">Aquí debes poner tu nombre</label>
                     <div class="wrap-input100 validate-input" data-validate="Please enter your name">
-                        <input class="input100" type="text" name="name" placeholder="Nombre" aria-labelledby/>
+                        <input class="input100" type="text" name="name" placeholder="Nombre" aria-labelledby="labelnombre"/>
                         <span class="focus-input100"></span>
                     </div>
+                    <label hidden="hidden" id="labelcorreo">Aquí debes poner tu correo</label>
                     <div class="wrap-input100 validate-input" data-validate="Please enter email: e@a.x">
-                        <input class="input100" type="text" name="email" placeholder="Correo" aria-labelledby/>
+                        <input class="input100" type="text" name="email" placeholder="Correo" aria-labelledby="labelcorreo"/>
+                        <label hidden="hidden">Aquí debes poner tu correo</label>
                         <span class="focus-input100"></span>
                     </div>
+                    <label hidden="hidden" id="labelmensaje">Aquí debes poner tu mensaje para nosotros</label>
                     <div class="wrap-input100 validate-input" data-validate="Please enter your message">
-                        <textarea class="input100" type="text" name="message" placeholder="Tu mensaje" aria-labelledby></textarea>
+                        <textarea class="input100" type="text" name="message" placeholder="Tu mensaje" aria-labelledby="labelmensaje"></textarea>
                         <span class="focus-input100"></span>
                     </div>
                     <div class="container-contact100-form-btn">
