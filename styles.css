@@ -137,7 +137,7 @@ textarea.input100 {
     padding: 0 20px;
     min-width: 160px;
     height: 42px;
-    background-color: #B7CAFA;
+    background-color: #48458e;
     border-radius: 21px;
     font-family: Roboto;
     font-weight: 500;
@@ -152,7 +152,7 @@ textarea.input100 {
     border: none;
 }
 .contact100-form-btn:hover {
-    background-color: #6866a9;
+    background-color: #272470;
 }
 @media (max-width: 768px) {
     .wrap-contact100 {
@@ -193,9 +193,9 @@ textarea.input100 {
 
 .btn-outline-primary {
     --bs-btn-color: var(--bs-black);
-    --bs-btn-hover-bg: #2F2B91;
-    --bs-btn-hover-border-color: #2F2B91;
-    --bs-btn-border-color: #2F2B91;
+    --bs-btn-hover-bg: #48458e;
+    --bs-btn-hover-border-color: #48458e;
+    --bs-btn-border-color: #48458e;
     font-family: "Roboto", sans-serif;
     font-weight: 500;
 }
@@ -273,7 +273,7 @@ textarea.input100 {
 }
 
 .mora2 {
-    background-color: #6866a9 !important;
+    background-color: #48458e;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -283,11 +283,11 @@ textarea.input100 {
     justify-content: center;
     align-items: center;
     float: left;
-    padding-top: 730px;
-    padding-bottom: 680px;
+    padding-top: 430px;
+    padding-bottom: 430px;
     padding-left: 150px;
     padding-right: 150px;
-    left: 0;
+    font-size: 80px;
 }
 
 .float-child {
@@ -295,9 +295,7 @@ textarea.input100 {
     float: left;
     justify-content: center;
     align-items: center;
-    margin-left: 30px;
-    margin-right: 30px;
-    margin-bottom: 30px;
+    margin:30px;
 }
 .contact-form-title {
     justify-content: center;
@@ -338,5 +336,5 @@ textarea.input100 {
 }
 
 .border-primary {
-  border-color: #2F2B91 !important;
+  border-color: #48458e !important;
 }
