@@ -336,3 +336,7 @@ textarea.input100 {
 .bg-info {
     background-color: #CBD9FB !important;
 }
+
+.border-primary {
+  border-color: #2F2B91 !important;
+}
