@@ -7,6 +7,9 @@
         <title>Tecno-conecta2</title>
         <meta name="title" content="Tecno-conecta2" />
         <meta name="description" content="¡En Tecno-conecta2 estamos dedicados a incentivar a personas mayores y sus nietos proveyéndoles objetos que puedan acercarlos a la tecnología!" />
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous"/>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto:wght@300;500&display=swap" rel="stylesheet"/>
+        <link rel="stylesheet" href="styles.css" />
 
         <!-- Open Graph / Facebook -->
         <meta property="og:type" content="website" />
@@ -241,7 +244,7 @@
                 </div>
                 <div class="float-child">
                     <div class="row" id="trabajosdestacados">
-                        <script>
+                        <script async>
                             async function proyectos() {
                                 const consulta = await fetch("https://raw.githubusercontent.com/Ange-Espinoza/data/main/data.json");
                                 const data = await consulta.json();
@@ -314,10 +317,7 @@
             </div>
         </div>
 
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous"/>
-        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto:wght@300;500&display=swap" rel="stylesheet"/>
-        <link rel="stylesheet" href="styles.css" />
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous" async></script>
         <footer class="mora2 footer">
             <div class="container">
                 <p>&copy; 2023 TECNO-CONECTA2 &middot;</p>
