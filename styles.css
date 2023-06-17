@@ -241,7 +241,7 @@ textarea.input100 {
     margin: 3rem;
 }
 .featurette-heading,
-.barrita {
+.palabrasbarrita {
     font-weight: 700;
     font-family: Montserrat;
 }
@@ -335,6 +335,10 @@ textarea.input100 {
     background-color: #CBD9FB !important;
 }
 
-.border-primary {
-  border-color: #48458e !important;
+.bg-primary {
+    background-color: #48458e !important;
+}
+
+.bg-dark {
+    background-color: #060523 !important;
 }
