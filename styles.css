@@ -183,12 +183,17 @@ textarea.input100 {
 }
 
 .btn-outline-danger {
-    --bs-btn-color: var(--bs-white);
+    --bs-btn-color: var(--bs-black !important);
     --bs-btn-hover-bg: #FAD1FA;
     --bs-btn-hover-border-color: #FAD1FA;
     --bs-btn-border-color: #FAD1FA;
+    color: white;
     font-family: "Roboto", sans-serif;
     font-weight: 500;
+}
+
+.btn-outline-danger:hover {
+    color: #48458e;
 }
 
 .btn-outline-primary {
@@ -198,6 +203,7 @@ textarea.input100 {
     --bs-btn-border-color: #48458e;
     font-family: "Roboto", sans-serif;
     font-weight: 500;
+    color: #48458e;
 }
 
 .bg-dark {
