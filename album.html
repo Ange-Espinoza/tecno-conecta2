@@ -124,14 +124,14 @@
                                 data.forEach(function (t, i) {
                                     donde.innerHTML +=
                                         '<article class="col"><div class="card h-100 shadow-sm"><img src="' +
-                                       t.cover +
+                                        t.cover +
                                         '"alt="' +
                                         t.alt +
-                                        '" class="card-img-top"><div class="card-body"><h3 class="fs-5"><a href="single.html?nro=' +
+                                        '"  class="card-img-top"><div class="card-body" ><h3 class="fs-5"><a href="single.html?nro=' +
                                         i +
-                                        '" class="' +
+                                        '" aria-label="' +
                                         t.alt +
-                                        '"><h3 class="card-title">' +
+                                        '"><div class="card-body"><h3 class="card-title">' +
                                         t.title +
                                         "</a></h3><p>" +
                                         t.rating +
@@ -156,7 +156,7 @@
             </div>
         </main>
 
-            <footer class="mora2 footer">
+        <footer class="mora2 footer">
             <div class="container">
                 <p>&copy; 2023 TECNO-CONECTA2 &middot;</p>
             </div>
