@@ -140,32 +140,32 @@
                                         data.forEach(function (t, i) {
                                             if (0 < i)
                                                 if (i < 4) {
-                                                    donde.innerHTML +=
-                                                        '<article class="col-lg-4"><div class="card" style="width: 18rem;"><img width="100%" height="100%" src="' +
-                                                        t.cover +
-                                                        '"alt="' +
-                                                        t.alt +
-                                        '"  class="card-img-top"><div class="card-body" ><h3 class="fs-5"><a href="single.html?nro=' +
-                                        i +
-                                        '" aria-label="' +
-                                        t.alt +
-                                        '" class="link-secondary"><div class="card-body">' +
-                                                        t.title +
-                                                        "</a></h3><p>" +
-                                                        t.rating +
-                                                        "</p><small>" +
-                                                        "</a><b><p>" +
-                                                        t.author +
-                                                        "</p></b><small><p>" +
-                                                        "Complejidad nivel: " +
-                                                        "<b>" +
-                                                        t.complexity +
-                                                        "</b>" +
-                                                        "</small>" +
-                                                        "</p><small><em>#" +
-                                                        t.tags[0] +
-                                                        "</em></small></div></div></div></article>";
-                                                }
+                                                     donde.innerHTML +=
+                                                '<article class="col-lg-4"><div class="card" style="width: 18rem;"><img width="100%" height="100%" src="' +
+                                                t.cover +
+                                                '"alt="' +
+                                                t.alt +
+                                                '"  class="card-img-top"><div class="card-body" ><h3 class="fs-5"><a href="single.html?nro=' +
+                                                i +
+                                                '" aria-label="' +
+                                                t.alt +
+                                                '"><div class="card-body"><h3 class="card-title">' +
+                                                t.title +
+                                                "</a></h3><p>" +
+                                                t.rating +
+                                                "</p><small>" +
+                                                "</a><b><p>" +
+                                                t.author +
+                                                "</p></b><small><p>" +
+                                                "Complejidad nivel: " +
+                                                "<b>" +
+                                                t.complexity +
+                                                "</b>" +
+                                                "</small>" +
+                                                "</p><small><em>#" +
+                                                t.tags[0] +
+                                                "</em></small></div></div></div></article>";
+                                            }
                                         });
                                     }
                                     proyectos().catch((error) => console.error(error));
@@ -189,33 +189,33 @@
                                 const data = await consulta.json();
                                 var donde = document.querySelector("#trabajosdestacados");
                                 data.forEach(function (t, i) {
-                                    if (i < 4) {
-                                        donde.innerHTML +=
-                                            '<article class="col"><div class="card h-100 shadow-sm"><img src="' +
+                                    if(i < 4){
+                                    donde.innerHTML +=
+                                        '<div class="float-child"><article class="col"><div class="card h-100 shadow-sm"><img width="100%" height="100%" src="' +
                                         t.cover +
                                         '"alt="' +
                                         t.alt +
-                                        '"  class="card-img-top"><div class="card-body" ><h3 class="fs-5"><a href="single.html?nro=' +
+                                        '" class="card-img-top"><div class="card-body"><h3 class="fs-5"><a href="single.html?nro=' +
                                         i +
-                                        '" aria-label="' +
+                                        '" class="' +
                                         t.alt +
-                                        '" class="link-secondary"><div class="card-body">' +
-                                            t.title +
-                                            "</a></h3><p>" +
-                                            t.rating +
-                                            "</p><small>" +
-                                            "</a><b><p>" +
-                                            t.author +
-                                            "</p></b><small><p>" +
-                                            "Complejidad nivel: " +
-                                            "<b>" +
-                                            t.complexity +
-                                            "</b>" +
-                                            "</small>" +
-                                            "</p><small><em>#" +
-                                            t.tags[0] +
-                                            "</em></small></div></div></article></div>";
-                                    }
+                                        '">' +
+                                        t.title +
+                                        "</a></h3><p>" +
+                                        t.rating +
+                                        "</p><small>" +
+                                        "</a><b><p>" +
+                                        t.author +
+                                        "</p></b><small><p>" +
+                                        "Complejidad nivel: " +
+                                        "<b>" +
+                                        t.complexity +
+                                        "</b>" +
+                                        "</small>" +
+                                        "</p><small><em>#" +
+                                        t.tags[0] +
+                                        "</em></small></div></div></article></div>";
+                                      }
                                 });
                             }
                             proyectos().catch((error) => console.error(error));
