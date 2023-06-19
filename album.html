@@ -123,15 +123,15 @@
                                 var donde = document.querySelector("#trabajos");
                                 data.forEach(function (t, i) {
                                     donde.innerHTML +=
-                                        '<article class="col"><div class="card h-100 shadow-sm"><img src="' +
+                                         '<article class="col"><div class="card h-100 shadow-sm"><img src="' +
                                         t.cover +
                                         '"alt="' +
                                         t.alt +
-                                        '"  class="card-img-top"><div class="card-body" ><h3 class="fs-5"><a href="single.html?nro=' +
+                                        '" class="card-img-top"><div class="card-body"><h3 class="fs-5"><a href="single.html?nro=' +
                                         i +
-                                        '" aria-label="' +
+                                        '" class="' +
                                         t.alt +
-                                        '"><div class="card-body"><h3 class="card-title">' +
+                                        '">' +
                                         t.title +
                                         "</a></h3><p>" +
                                         t.rating +
@@ -146,7 +146,8 @@
                                         "</small>" +
                                         "</p><small><em>#" +
                                         t.tags[0] +
-                                        "</em></small></div></div></article>";
+                                        "</em></small></div></div></article></div>";
+                                    
                                 });
                             }
                             proyectos().catch((error) => console.error(error));
