@@ -247,7 +247,7 @@ textarea.input100 {
     margin: 3rem;
 }
 .featurette-heading,
-.palabrasbarrita {
+.palabrasbarrita, .titulo {
     font-weight: 700;
     font-family: Montserrat;
 }
