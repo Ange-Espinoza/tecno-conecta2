@@ -1,0 +1,47 @@
+[
+    {"title": "Grulla de papel electrónica: ¡Aletea!",
+    "author": "High-Low Tech",
+     "tags":["papel", "origami", "batería", "manualidad"],
+     "steps": 16,
+     "rating":"★★★★☆",
+     "complexity":5,
+     "cover":"img/grulla_papel.webp",
+     "alt": "Imagen de una grulla de papel hecha con origami, conectada a una batería"
+    },
+    {"title": "¡Circuitos LED usando papel!",
+    "author": "High-Low Tech",
+     "tags":["papel", "batería", "manualidad", "leds","luz"],
+     "steps": 5,
+     "rating":"★★★★☆",
+     "complexity":2,
+      "cover":"img/tarta_luces_led.webp",
+     "alt": "Imagen de un papel con una pintura de un pastel, con las velas encendidas gracias a LEDs"
+    },
+    {"title": "Altavoces de papel",
+    "author": "High-Low Tech",
+     "tags":["corte láser", "papel","parlantes","audio","manualidad"],
+     "steps":4,
+     "rating":"★★★☆☆",
+     "complexity":7,
+    "cover":"img/parlantes_papel.webp",
+     "alt": "Imagen de papeles con espirales en ellos, los cuales servirán de parlantes"
+    },
+     {"title": "Lámpara de papel",
+    "author": "High-Low Tech",
+     "tags":["corte láser", "papel","lámpara","luz","manualidad"],
+     "steps": 10,
+     "rating":"★★★★☆",
+     "complexity":7.5,
+     "cover":"img/lampara_papel.webp",
+     "alt": "Imagen de una lámara encendida, con tonos rosados, y hecha de papel"
+    },
+    {"title": "Parlante simple con Arduino",
+    "author": "High-Low Tech",
+     "tags":["parlantes","audio","arduino"],
+     "steps": 4,
+     "rating":"★★★☆☆",
+     "complexity":3,
+      "cover":"img/parlante_arduino.webp",
+     "alt": "Imagen de un parlante conectado a una placa de Arduino encendida"
+    }
+]
