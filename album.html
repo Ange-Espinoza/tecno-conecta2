@@ -118,7 +118,7 @@
                     <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
                         <script>
                             async function proyectos() {
-                                const consulta = await fetch("https://raw.githubusercontent.com/Ange-Espinoza/data/main/data.json");
+                                const consulta = await fetch("https://raw.githubusercontent.com/Ange-Espinoza/tecno-conecta2/main/data.json");
                                 const data = await consulta.json();
                                 var donde = document.querySelector("#trabajos");
                                 data.forEach(function (t, i) {
