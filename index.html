@@ -98,10 +98,10 @@
                                     <div class="container">
                                         <h1 style="color: rgb(255, 255, 255); background-color: #48458e;" fw-light>¡Qué feliz nos hace que estés por aquí!</h1>
                                         <p class="lh-sm" style="color: rgb(255, 255, 255); background-color: #48458e;">
-                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec varius, ante ut mollis ullamcorper, quam neque cursus magna, luctus ullamcorper est mauris eu sem.
+                                            ¿Te interesa conocer todos los proyectos que tenemos disponibles para ti? ¡Vamos allá!
                                         </p>
                                         <p style="color: rgb(255, 255, 255); background-color: #48458e;">
-                                            <a class="btn btn-lg btn-outline-danger" href="album.html"> Ver los proyectos </a>
+                                            <a class="btn btn-lg btn-outline-danger" href="album.html"> Ver todos los proyectos </a>
                                         </p>
                                     </div>
                                     <div class="w-100">
@@ -117,15 +117,14 @@
                 <div class="row featurette bg-info">
                     <div class="col-md-7 order-md-2 py-3">
                         <h2 class="featurette-heading">
-                            Oh, sí, es tan bueno. Míralo tú mismo.
+                            ¿Vienes incorporándote?
                         </h2>
                         <p class="lead">
-                            Aliquam nec risus et est tincidunt pharetra. Ut aliquet tellus quis diam dapibus volutpat. Pellentesque aliquam ultrices erat, vitae egestas elit venenatis nec.
+                            ¡Aquí tienes de los proyectos más simples para que comiences a adentrarte en este mundo!
                         </p>
-                        <p><a class="btn btn-outline-primary float-end" href="index2.html">Ver más</a></p>
                     </div>
                     <div class="col-md-5 order-md-1 py-3">
-                        <img class="img-fluid m-1" alt="Imagen de abuelos recostados con su nieta" width="100%" height="100%" src="img/10.webp" />
+                        <img class="img-fluid m-1" alt="Ilustración de personas compartiendo computadora y levantamiento de datos" width="100%" height="100%" src="img/10.webp" />
                     </div>
                 </div>
 
@@ -143,8 +142,7 @@
                                 const data = await consulta.json();
                                 var donde = document.querySelector("#trabajos");
                                 data.forEach(function (t, i) {
-                                            if (0 < i)
-                                                if (i < 4) {
+                                            if (t.complexity < 4 ){
                                     donde.innerHTML +=
                                          '<article class="col"><div class="card h-100 shadow-sm"><img width="100%" height="100%" src="' +
                                         t.cover +
@@ -168,7 +166,7 @@
                                         "</b>" +
                                         "</small>" +
                                         "</p><small><em>#" +
-                                        t.tags[0] +
+                                        t.tags[0] + ', #' + t.tags[1]
                                         "</em></small></div></div></article></div>";
                                     
                                                 }
@@ -184,6 +182,10 @@
                 <div class="float-container bg-info">
                     <div class="col">
                         <h1 class="featurette-heading titulo">Proyectos destaca2</h1>
+                        <p></p>
+                        <div class="w-100">
+                        <p class="proyectos"><em>(¡Aquí están los proyectos</em></p> 
+                            <p class="proyectos"><em>con mayor puntuación!)</em></p></div>
                     </div>
                 </div>
                 <div class="float-child">
@@ -194,7 +196,7 @@
                                 const data = await consulta.json();
                                 var donde = document.querySelector("#trabajosdestacados");
                                 data.forEach(function (t, i) {
-                                    if(i < 4){
+                                    if(t.puntuation >= 4){
                                     donde.innerHTML +=
                                         '<div class="float-child"><article class="col"><div class="card h-100 shadow-sm"><img width="100%" height="100%" src="' +
                                         t.cover +
@@ -218,7 +220,7 @@
                                         "</b>" +
                                         "</small>" +
                                         "</p><small><em>#" +
-                                        t.tags[0] +
+                                        t.tags[0] + ', #' + t.tags[1]
                                         "</em></small></div></div></article></div>";
                                       }
                                 });
