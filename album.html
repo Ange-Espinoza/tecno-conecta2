@@ -94,10 +94,10 @@
                     <div class="container-fluid" id="centrar">
                         <div class="carousel-caption m-2 h-75 w-75 py-lg-5 col-lg-6 col-md-8 mx-auto" id="centrar">
                             <div class="container">
-                                <h1 style="color: rgb(0, 0, 0); background-color: #ffffff;" fw-light>¡Qué feliz nos hace que estés por aquí!</h1>
-                                <p class="lh-sm" style="color: rgb(0, 0, 0); background-color: #ffffff;">
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec varius, ante ut mollis ullamcorper, quam neque cursus magna, luctus ullamcorper est mauris eu sem.
-                                </p>
+                                <h1 style="color: rgb(0, 0, 0); background-color: #ffffff;" fw-light>¡Aquí están todos los proyectos disponibles!</h1>
+                                <h2 class="lh-sm subtitulo" style="color: rgb(0, 0, 0); background-color: #ffffff;">
+                                    ¡Elige uno y diviértete!
+                                </h2>
                             </div>
                             <div class="w-100">
                                 <img width="110%" height="110%" src="img/15.webp" alt="Illustración colorida de personas conectadas mediante computadores" />
@@ -123,7 +123,7 @@
                                 var donde = document.querySelector("#trabajos");
                                 data.forEach(function (t, i) {
                                     donde.innerHTML +=
-                                         '<article class="col"><div class="card h-100 shadow-sm"><img src="' +
+                                         '<article class="col"><div class="card h-100 shadow-sm"><img width="auto" height="auto" src="' +
                                         t.cover +
                                         '"alt="' +
                                         t.alt +
@@ -145,7 +145,7 @@
                                         "</b>" +
                                         "</small>" +
                                         "</p><small><em>#" +
-                                        t.tags[0] +
+                                        t.tags[0] + ', #' + t.tags[1]
                                         "</em></small></div></div></article></div>";
                                     
                                 });
