@@ -288,9 +288,9 @@ textarea.input100 {
 .float-container {
     padding-top: 430px;
     padding-bottom: 430px;
-    padding-left: 150px;
-    padding-right: 150px;
     font-size: 4.3rem;
+    padding-left: 50px;
+    padding-right: 50px;
 }
 
 .titulo{
@@ -397,4 +397,25 @@ textarea.input100 {
       .bd-mode-toggle {
         z-index: 1500;
       }
+
+
+.incorporando {
+    font-weight: 700;
+    font-family: Montserrat;
+    font-size: 30px;
+    text-align: center;
+    padding-top: 60px;
+    padding-bottom: 20px;
+}
+
+.proyectos {
+    line-height: 1px;
+    font-size: 20px;
+    text-align: center;
+}
+
+.subtitulo {
+    font-family: Roboto;
+    font-weight: 300;
+    font-size: 25px;
 }
