@@ -2,7 +2,7 @@
     {"title": "Grulla de papel electrónica: ¡Aletea!",
     "author": "High-Low Tech",
      "tags":["papel", "origami", "batería", "manualidad"],
-    "pasos":[{"formar grulla","cortar y pegar nitinol", "soldar", "coser", "cables", "precalentar", "tensionar", "agregar a la grulla"}],
+    "pasos":["formar grulla","cortar y pegar nitinol", "soldar", "coser", "cables", "precalentar", "tensionar", "agregar a la grulla"],
      "steps": 8,
      "rating":"★★★★☆",
       "puntuation":4,
