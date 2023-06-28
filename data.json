@@ -13,6 +13,7 @@
     {"title": "¡Circuitos LED usando papel!",
     "author": "High-Low Tech",
      "tags":["papel", "batería", "manualidad", "leds","luz"],
+    "pasos":["formar grulla2","cortar y pegar nitinol2", "soldar2", "coser2", "cables2", "precalentar2", "tensionar2", "agregar a la grulla2"],
      "steps": 5,
      "rating":"★★★★☆",
       "puntuation":4,
