@@ -6,7 +6,7 @@
 
 a{
     color:#48458e;
-    font-family: Roboto;
+    font-family: "Roboto";
     font-weight: 500;
 }
 
@@ -68,7 +68,7 @@ textarea::-webkit-input-placeholder {
 
 .contact100-form-title {
     display: block;
-    font-family: Montserrat;
+    font-family: "Montserrat";
     font-size: 30px;
     color: #333;
     line-height: 1.2;
@@ -87,7 +87,7 @@ textarea::-webkit-input-placeholder {
     display: block;
     width: 100%;
     background: 0 0;
-    font-family: Roboto;
+    font-family: "Roboto";
     font-size: 16px;
     color: #4b2354;
     line-height: 1.2;
@@ -139,7 +139,7 @@ textarea.input100 {
     height: 42px;
     background-color: #48458e;
     border-radius: 21px;
-    font-family: Roboto;
+    font-family: "Roboto";
     font-weight: 500;
     font-size: 17px;
     color: #fff;
@@ -249,7 +249,7 @@ textarea.input100 {
 .featurette-heading,
 .palabrasbarrita, .titulo {
     font-weight: 700;
-    font-family: Montserrat;
+    font-family: "Montserrat";
 }
 
 @media (min-width: 40em) {
@@ -306,7 +306,7 @@ textarea.input100 {
 }
 .contact-form-title {
     justify-content: center;
-    font-family: Roboto;
+    font-family: "Roboto";
     font-weight: 300;
 }
 
@@ -401,7 +401,7 @@ textarea.input100 {
 
 .incorporando {
     font-weight: 700;
-    font-family: Montserrat;
+    font-family: "Montserrat";
     font-size: 30px;
     text-align: center;
     padding-top: 60px;
@@ -415,7 +415,11 @@ textarea.input100 {
 }
 
 .subtitulo {
-    font-family: Roboto;
+    font-family: "Roboto";
     font-weight: 300;
     font-size: 25px;
+}
+
+.sv {
+    color: #ffff;
 }
