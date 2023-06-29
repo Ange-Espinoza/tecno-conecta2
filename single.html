@@ -96,6 +96,15 @@
                     <div class="container-fluid" id="trabajitos"></div>
                 </div>
             </div>
+            <section class="m-5">
+                <div id="materiales"></div>
+                    <h1 class="titulo">Pasos</h1>
+            <div class="col">
+                <div class="row">
+                    <div id="pasitos"></div>
+                </div>
+                </div>
+            </section>
             <section>
                 <div class="album py-5 m-5">
                     <h1 class="titulo">Comentarios</h1>
@@ -139,12 +148,18 @@
                         data[n].steps +
                         '</p><small><small><h2 class="lh-sm" style="color: rgb(255, 255, 255); background-color: #48458e;">' +
                         data[n].rating +
-                        '</small></small></h2></div><div class="w-100"><img width="100%" height="100%" src="' +
-                        data[n].cover +
+                        '</small></small></h2></div><div class="w-100"><img width="75%" height="75%" src="' +
+                        data[n].cover[0] +
                         '" alt="Illustración colorida de personas conectadas mediante computadores" /></div></div></div>';
 
                     document.querySelector("#comentarios").innerHTML =
                         '<div class="fb-comments justify-content-center" data-href="https://ange-espinoza.github.io/tecno-conecta2/single.html?nro=' + n + '" data-colorscheme="dark" data-width="100%" data-numposts="5"></div>';
+                    
+                    document.querySelector("#materiales").innerHTML =
+                        '<hr> <div class="row featurette"> <div class="col-md-7"> <h1 class="titulo">Materiales</h1><ul>'+ data[n].mat+'</ul> </div> <div class="col-md-5"><img class="m-5 py-3" src="'+ data[n].cover[1]+'" heigh="75%" width="75%"></div></div><hr>';
+                    
+                    document.querySelector("#pasitos").innerHTML =
+                        '<div class="row featurette"> <div class="col-md-7"><ul>'+ data[n].pasos+'</ul> </div> <div class="col-md-5"></div> </div><hr>';
                 } //ahora cierro la creación de la función asincrónica
                 trabajoscomentados().catch((error) => console.error(error));
             </script>
@@ -156,7 +171,7 @@
                                 data.forEach(function (t, i) {
                                     donde.innerHTML +=
                                          '<article class="col"><div class="card h-100 shadow-sm"><img width="auto" height="auto" src="' +
-                                        t.cover +
+                                        t.cover[0] +
                                         '"alt="' +
                                         t.alt +
                                         '" class="card-img-top"><div class="card-body"><h1 class="fs-5"><a href="single.html?nro=' +
