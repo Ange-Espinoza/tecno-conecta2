@@ -114,7 +114,7 @@
                         <div class="h-100"></div>
                         <div class="album py-5">
                         <div class="container py-5">
-                            <div class="row row-cols-6 row-cols-sm-6 row-cols-md-6 row-cols-lg-6 g-6" id="otros"></div>
+                            <div class="row row-cols-2 row-cols-sm-6 row-cols-md-6 row-cols-lg-6 g-6" id="otros"></div>
                         </div>
                     </div>
                         </div>
@@ -148,7 +148,6 @@
                 } //ahora cierro la creación de la función asincrónica
                 trabajoscomentados().catch((error) => console.error(error));
             </script>
-               <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
                         <script>
                             async function proyectos() {
                                 const consulta = await fetch("https://raw.githubusercontent.com/Ange-Espinoza/tecno-conecta2/main/data.json");
@@ -185,7 +184,6 @@
                             }
                             proyectos().catch((error) => console.error(error));
                         </script>
-                    </div>
             <footer class="mora2 footer">
                 <div class="container">
                     <p>&copy; 2023 TECNO-CONECTA2 &middot;</p>
