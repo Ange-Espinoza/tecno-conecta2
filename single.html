@@ -37,7 +37,7 @@
                     <div class="row">
                         <div class="col-sm-8 col-md-7 py-4">
                             <h4>Sobre esta página</h4>
-                           ¡En Tecno-conecta2 estamos dedicados a incentivar a personas mayores y sus nietos proveyéndoles objetos que puedan acercarlos a la tecnología!
+                            ¡En Tecno-conecta2 estamos dedicados a incentivar a personas mayores y sus nietos proveyéndoles objetos que puedan acercarlos a la tecnología!
                         </div>
                         <div class="col-sm-4 offset-md-1 py-4">
                             <h4>Nuestras redes</h4>
@@ -97,31 +97,25 @@
                 </div>
             </div>
             <section>
-                <div class="album py-5">
-                    <div class="container">
-                        <section id="pasitos">
-                            <div class="container py-5">
-                                <div class="row row-cols-2 row-cols-sm-3 row-cols-md-4 row-cols-lg-5 g-4" id="trabajos"></div>
-                            </div>
-                        </section>
-                    </div>
+                <div class="album py-5 m-5">
+                    <h1 class="titulo">Comentarios</h1>
+            <div class="col py-5">
+                <div class="row">
+                    <div class="h-100"></div>
+                    <div id="comentarios"></div>
                 </div>
-            </section>
-                <div class="col">
-                    <div class="row m-5">
-                <h1 class="titulo">Comentarios</h1>
-                <div class="h-100"></div>
-                    <div id="comentarios">
-                        </div></div></div>
+                </div>
+            </div>
             <div class="mora2">
-               <section>
+                <section>
                     <div class="row m-5">
-                    <h1 class="titulo sv">Seguir viendo...</h1>
-                <div class="h-100"></div>
+                        <h1 class="titulo sv">Seguir viendo...</h1>
+                        <div class="h-100"></div>
                         <div class="container py-5">
-                            <div class="row row-cols-4 row-cols-sm-5 row-cols-md-5 row-cols-lg-6 g-6"  id="recomendados"></div></div>
+                            <div class="row row-cols-4 row-cols-sm-5 row-cols-md-5 row-cols-lg-6 g-6" id="recomendados"></div>
                         </div>
-                    </section>
+                    </div>
+                </section>
             </div>
             <script>
                 var n = new URLSearchParams(window.location.search).get("nro");
@@ -145,55 +139,52 @@
                         '</small></small></h2></div><div class="w-100"><img width="65%" height="65%" src="' +
                         data[n].cover +
                         '" alt="Illustración colorida de personas conectadas mediante computadores" /></div></div></div>';
-                    
-                    document.querySelector("#comentarios").innerHTML = '<div class="fb-comments justify-content-center" data-href="https://ange-espinoza.github.io/tecno-conecta2/single.html?nro='+ n +'" data-colorscheme="dark" data-width="100%" data-numposts="5"></div>';
-                    
-                }//ahora cierro la creación de la función asincrónica
+
+                    document.querySelector("#comentarios").innerHTML =
+                        '<div class="fb-comments justify-content-center" data-href="https://ange-espinoza.github.io/tecno-conecta2/single.html?nro=' + n + '" data-colorscheme="dark" data-width="100%" data-numposts="5"></div>';
+                } //ahora cierro la creación de la función asincrónica
                 trabajoscomentados().catch((error) => console.error(error));
             </script>
-<script>
-                 
-            </script>
-             <div class="row row-cols-3 row-cols-sm-4 row-cols-md-4 g-4">
-            <script>
-                
-                var n = new URLSearchParams(window.location.search).get("nro");
-                n = Number(n);
-                            async function recomendacion() {
-                                const consulta = await fetch("https://raw.githubusercontent.com/Ange-Espinoza/tecno-conecta2/main/data.json");
-                                const data = await consulta.json();
-                                var donde = document.querySelector("#recomendados");
-                                data.forEach(function (t, i) {
-                                    donde.innerHTML +=
-                                         '<article class="col"><div class="card h-100 shadow-sm"><img width="auto" height="auto" src="' +
-                                        t.cover +
-                                        '"alt="' +
-                                        t.alt +
-                                        '" class="card-img-top"><div class="card-body"><h1 class="fs-5"><a href="single.html?nro=' +
-                                        i +
-                                        '" class="' +
-                                        t.alt +
-                                        '">' +
-                                        t.title +
-                                        "</a></h1><p>" +
-                                        t.rating +
-                                        "</p><small>" +
-                                        "</a><b><p>" +
-                                        t.author +
-                                        "</p></b><small><p>" +
-                                        "Complejidad nivel: " +
-                                        "<b>" +
-                                        t.complexity +
-                                        "</b>" +
-                                        "</small>" +
-                                        "</p><small><em>#" +
-                                        t.tags[0] + ', #' + t.tags[1]
-                                        "</em></small></div></div></article></div>";
-                                    
-                                });
-                            }
-                            recomendacion().catch((error) => console.error(error));
-                        </script>
+            <div class="row row-cols-3 row-cols-sm-4 row-cols-md-4 g-4">
+                <script>
+                    var n = new URLSearchParams(window.location.search).get("nro");
+                    n = Number(n);
+                    async function recomendacion() {
+                        const consulta = await fetch("https://raw.githubusercontent.com/Ange-Espinoza/tecno-conecta2/main/data.json");
+                        const data = await consulta.json();
+                        var donde = document.querySelector("#recomendados");
+                        data.forEach(function (t, i) {
+                            donde.innerHTML +=
+                                '<article class="col"><div class="card h-100 shadow-sm"><img width="100%" height="100%" src="' +
+                                t.cover +
+                                '"alt="' +
+                                t.alt +
+                                '" class="card-img-top"><div class="card-body"><h1 class="fs-5"><a href="single.html?nro=' +
+                                i +
+                                '" class="' +
+                                t.alt +
+                                '">' +
+                                t.title +
+                                "</a></h1><p>" +
+                                t.rating +
+                                "</p><small>" +
+                                "</a><b><p>" +
+                                t.author +
+                                "</p></b><small><p>" +
+                                "Complejidad nivel: " +
+                                "<b>" +
+                                t.complexity +
+                                "</b>" +
+                                "</small>" +
+                                "</p><small><em>#" +
+                                t.tags[0] +
+                                ", #" +
+                                t.tags[1];
+                            ("</em></small></div></div></article></div>");
+                        });
+                    }
+                    recomendacion().catch((error) => console.error(error));
+                </script>
             </div>
             <footer class="mora2 footer">
                 <div class="container">
