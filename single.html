@@ -109,6 +109,12 @@
                 </div>
                 </div>
             </section>
+              <div class="col">
+                    <div class="row m-5">
+                <h1 class="titulo">Comentarios</h1>
+                <div class="h-100"></div>
+                    <div id="comentarios">
+                        </div></div></div>
             <div class="mora2">
                 <section>
                     <div class="row m-5">
@@ -144,6 +150,8 @@
                         '</small></small></h2></div><div class="w-100"><img width="75%" height="100%" src="' +
                         data[n].cover[0] +
                         '" alt="'+data[n].alt+'"/></div></div></div>';
+
+                     document.querySelector("#comentarios").innerHTML = '<div class="fb-comments justify-content-center" data-href="https://ange-espinoza.github.io/tecno-conecta2/single.html?nro='+ n +'" data-colorscheme="dark" data-width="100%" data-numposts="5"></div>';
                     
                     document.querySelector("#materiales").innerHTML =
                         '<hr> <div class="row featurette"> <div class="col-md-7"> <h1 class="titulo">Materiales</h1><ul>'+ data[n].mat+'</ul> </div> <div class="col-md-5"><div class="w-100"><img width="75%" height="56.39%" class="m-5 py-3" src="'+ data[n].cover[1]+'" alt="'+data[n].alt+'"></div></div></div><hr>';
