@@ -28,8 +28,6 @@
         <!-- Meta Tags Generated with https://metatags.io -->
     </head>
     <body>
-        <div id="fb-root"></div>
-        <script async defer crossorigin="anonymous" src="https://connect.facebook.net/es_LA/sdk.js#xfbml=1&version=v17.0" nonce="z9OTy1YX"></script>
         <title>Tecno-conecta2</title>
         <header class="justify-content-center header bg-primary">
             <div class="collapse bg-dark collapse container-fluid" id="navbarCollapse">
@@ -37,7 +35,7 @@
                     <div class="row">
                         <div class="col-sm-8 col-md-7 py-4">
                             <h4>Sobre esta página</h4>
-                           ¡En Tecno-conecta2 estamos dedicados a incentivar a personas mayores y sus nietos proveyéndoles objetos que puedan acercarlos a la tecnología!
+                            Estudiante de Diseño con mención en visualidad y medios. Tengo 20 años, distintas motivaciones y <em> hobbies</em>, y mucho por aprender.
                         </div>
                         <div class="col-sm-4 offset-md-1 py-4">
                             <h4>Nuestras redes</h4>
@@ -88,120 +86,63 @@
             </div>
         </header>
         <main>
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <svg width="100%" height="100%">
-                        <rect width="100%" height="100%" fill="#48458e" />
-                    </svg>
-                    <div class="container-fluid" id="trabajitos"></div>
-                </div>
-            </div>
-            <section>
-                <div class="album py-5">
-                    <div class="container">
-                        <section id="pasitos">
-                            <div class="container py-5">
-                                <div class="row row-cols-2 row-cols-sm-3 row-cols-md-4 row-cols-lg-5 g-4" id="trabajos"></div>
-                            </div>
-                        </section>
-                    </div>
-                </div>
-            </section>
-                <div class="col">
-                    <div class="row m-5">
-                <h1 class="titulo">Comentarios</h1>
-                <div class="h-100"></div>
-                    <div id="comentarios">
-                        </div></div></div>
-            <div class="mora2">
-               <section>
-                    <div class="row m-5">
-                    <h1 class="titulo sv">Seguir viendo...</h1>
-                <div class="h-100"></div>
-                        <div class="container py-5">
-                            <div class="row row-cols-4 row-cols-sm-5 row-cols-md-5 row-cols-lg-6 g-6"  id="recomendados"></div></div>
-                        </div>
-                    </section>
-            </div>
-            <script>
-                var n = new URLSearchParams(window.location.search).get("nro");
-                n = Number(n);
-                async function trabajoscomentados() {
-                    const consulta = await fetch("https://raw.githubusercontent.com/Ange-Espinoza/tecno-conecta2/main/data.json");
-                    const data = await consulta.json();
-                    const cuantos = data.length;
-                    //Como n es siempre número: Ya no tengo posibilidad de null
-                    document.querySelector("#trabajitos").innerHTML =
-                        '<div class="container-fluid" id="centrar"><div class="carousel-caption m-2 h-75 w-75 py-lg-5 col-lg-6 col-md-8 mx-auto" id="centrar"><div class="container"><h1 style="color: rgb(255, 255, 255); background-color: #48458e;" fw-light>' +
-                        data[n].title +
-                        '</h1><p class="lh-sm" style="color: rgb(255, 255, 255); background-color: #48458e;">Creado por: ' +
-                        data[n].author +
-                        '</p><p class="lh-sm" style="color: rgb(255, 255, 255); background-color: #48458e;">Nivel de complejidad: ' +
-                        data[n].complexity +
-                        '</p><p class="lh-sm" style="color: rgb(255, 255, 255); background-color: #48458e;">Número de pasos: ' +
-                        data[n].steps +
-                        '</p><small><small><h2 class="lh-sm" style="color: rgb(255, 255, 255); background-color: #48458e;">' +
-                        data[n].rating +
-                        '</small></small></h2></div><div class="w-100"><img width="65%" height="65%" src="' +
-                        data[n].cover +
-                        '" alt="Illustración colorida de personas conectadas mediante computadores" /></div></div></div>';
-                    
-                    document.querySelector("#comentarios").innerHTML = '<div class="fb-comments justify-content-center" data-href="https://ange-espinoza.github.io/tecno-conecta2/single.html?nro='+ n +'" data-colorscheme="dark" data-width="100%" data-numposts="5"></div>';
-                    
-                }//ahora cierro la creación de la función asincrónica
-                trabajoscomentados().catch((error) => console.error(error));
-            </script>
-<script>
-                 
-            </script>
-             <div class="row row-cols-3 row-cols-sm-4 row-cols-md-4 g-4">
-            <script>
+           <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <svg width="100%" height="100%">
+                                <rect width="100%" height="100%" fill="#48458e" />
+                            </svg>
+                            <div class="container-fluid" id="trabajitos">
+                                
+                                        
                 
-                var n = new URLSearchParams(window.location.search).get("nro");
-                n = Number(n);
-                            async function recomendacion() {
-                                const consulta = await fetch("https://raw.githubusercontent.com/Ange-Espinoza/tecno-conecta2/main/data.json");
-                                const data = await consulta.json();
-                                var donde = document.querySelector("#recomendados");
-                                data.forEach(function (t, i) {
-                                    donde.innerHTML +=
-                                         '<article class="col"><div class="card h-100 shadow-sm"><img width="auto" height="auto" src="' +
-                                        t.cover +
-                                        '"alt="' +
-                                        t.alt +
-                                        '" class="card-img-top"><div class="card-body"><h1 class="fs-5"><a href="single.html?nro=' +
-                                        i +
-                                        '" class="' +
-                                        t.alt +
-                                        '">' +
-                                        t.title +
-                                        "</a></h1><p>" +
-                                        t.rating +
-                                        "</p><small>" +
-                                        "</a><b><p>" +
-                                        t.author +
-                                        "</p></b><small><p>" +
-                                        "Complejidad nivel: " +
-                                        "<b>" +
-                                        t.complexity +
-                                        "</b>" +
-                                        "</small>" +
-                                        "</p><small><em>#" +
-                                        t.tags[0] + ', #' + t.tags[1]
-                                        "</em></small></div></div></article></div>";
-                                    
-                                });
-                            }
-                            recomendacion().catch((error) => console.error(error));
-                        </script>
+                        </div>
+                    </div>
             </div>
-            <footer class="mora2 footer">
-                <div class="container">
-                    <p>&copy; 2023 TECNO-CONECTA2 &middot;</p>
+        <!--Sección sin identidad-->
+        <section>
+            <div class="container my-5 pt-5">
+                <div class="row row-cols-1 row-cols-lg-2 g-4" id="trabajos"></div>
+            </div>
+        </section>
+        <!--Complemento lateral-->
+        <aside>
+            <div class="container pb-4">
+                <div class="row">
+                    <div class="col-6" id="back"></div>
+                    <div class="col-6 text-end" id="next"></div>
                 </div>
-            </footer>
-            <!-- Lo que sigue es la biblioteca de Bootstrap-->
-            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js" integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N" crossorigin="anonymous"></script>
-        </main>
+            </div>
+        </aside>
+        <!-- El pie de página-->
+        <footer class="py-4 text-white">
+            <div class="container px-5"><p class="text-center small">TECNO-CONECTA2 &copy; 2023</p></div>
+        </footer>
+        <!-- Lo que sigue es JavaScript a secas-->
+        <script>
+            //Tomo el dato que trae ?nro=
+            var n = new URLSearchParams(window.location.search).get("nro");
+            //Lo que trae ?nro= será tratado siempre como número
+            n = Number(n);
+            //crearé una función asincrónica
+            async function proyectos() {
+                const consulta = await fetch("https://raw.githubusercontent.com/Ange-Espinoza/tecno-conecta2/main/data.json");
+                const data = await consulta.json();
+                const cuantos = data.length;
+                //Como n es siempre número: Ya no tengo posibilidad de null
+                document.querySelector("#trabajitos").innerHTML = '<div class="container-fluid" id="centrar"><div class="carousel-caption m-2 h-75 w-75 py-lg-5 col-lg-6 col-md-8 mx-auto" id="centrar"><div class="container"><h1 style="color: rgb(255, 255, 255); background-color: #48458e;" fw-light>' + data[n].title + '</h1><p class="lh-sm" style="color: rgb(255, 255, 255); background-color: #48458e;">Creado por: '+ data[n].author + '</p><p class="lh-sm" style="color: rgb(255, 255, 255); background-color: #48458e;">Nivel de complejidad: '+ data[n].complexity + '</p><p class="lh-sm" style="color: rgb(255, 255, 255); background-color: #48458e;">Número de pasos: '+ data[n].steps + '</p><small><small><h2 class="lh-sm" style="color: rgb(255, 255, 255); background-color: #48458e;">'+ data[n].rating + '</small></small></h2></div><div class="w-100"><img width="65%" height="65%" src="'+ data[n].cover +'" alt="Illustración colorida de personas conectadas mediante computadores" /></div></div></div>';
+                //Necesito una condición para pasar a trabajo anterior o siguiente si lo hubiera
+                if (n < 1) {
+                    document.querySelector("#next").innerHTML = '<a href="single.html?nro=' + (n + 1) + '" class="btn btn-sm btn-outline-secondary">Siguiente &rarr;</a>';
+                } else if (n > 0 && n < cuantos - 1) {
+                    document.querySelector("#back").innerHTML = '<a href="single.html?nro=' + (n - 1) + '" class="btn btn-sm btn-outline-secondary">&larr; Anterior</a>';
+                    document.querySelector("#next").innerHTML = '<a href="single.html?nro=' + (n + 1) + '" class="btn btn-sm btn-outline-secondary">Siguiente &rarr;</a>';
+                } else {
+                    document.querySelector("#back").innerHTML = '<a href="single.html?nro=' + (n - 1) + '" class="btn btn-sm btn-outline-secondary">&larr; Anterior</a>';
+                }
+            } //ahora cierro la creación de la función asincrónica
+            proyectos().catch((error) => console.error(error));
+        </script>
+        <!-- Lo que sigue es la biblioteca de Bootstrap-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js" integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N" crossorigin="anonymous"></script>
     </body>
 </html>
