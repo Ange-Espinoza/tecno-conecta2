@@ -150,13 +150,13 @@
                         data[n].rating +
                         '</small></small></h2></div><div class="w-100"><img width="75%" height="75%" src="' +
                         data[n].cover[0] +
-                        '" alt="Illustración colorida de personas conectadas mediante computadores" /></div></div></div>';
+                        '" alt="'+data[n].alt'" /></div></div></div>';
 
                     document.querySelector("#comentarios").innerHTML =
                         '<div class="fb-comments justify-content-center" data-href="https://ange-espinoza.github.io/tecno-conecta2/single.html?nro=' + n + '" data-colorscheme="dark" data-width="100%" data-numposts="5"></div>';
                     
                     document.querySelector("#materiales").innerHTML =
-                        '<hr> <div class="row featurette"> <div class="col-md-7"> <h1 class="titulo">Materiales</h1><ul>'+ data[n].mat+'</ul> </div> <div class="col-md-5"><img class="m-5 py-3" src="'+ data[n].cover[1]+'" alt="'+data[n].alt+'" width="75%" heigh="75%"></div></div><hr>';
+                        '<hr> <div class="row featurette"> <div class="col-md-7"> <h1 class="titulo">Materiales</h1><ul>'+ data[n].mat+'</ul> </div> <div class="col-md-5"><div class="w-70"><img width="100%" height="100%" class="m-5 py-3" src="'+ data[n].cover[1]+'" alt="'+data[n].alt'"></div></div></div><hr>';
                     
                     document.querySelector("#pasitos").innerHTML =
                         '<div class="row featurette"> <div class="col-md-7"><ul>'+ data[n].pasos+'</ul> </div> <div class="col-md-5"></div> </div><hr>';
@@ -170,7 +170,7 @@
                                 var donde = document.querySelector("#otros");
                                 data.forEach(function (t, i) {
                                     donde.innerHTML +=
-                                         '<article class="col"><div class="card h-100 shadow-sm"><img width="auto" height="auto" src="' +
+                                         '<article class="col"><div class="card h-100 shadow-sm"><img width="100%" height="100%" src="' +
                                         t.cover[0] +
                                         '"alt="' +
                                         t.alt +
