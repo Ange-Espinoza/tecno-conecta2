@@ -8,7 +8,7 @@
      "rating":"★★★★☆",
       "puntuation":4,
      "complexity":4,
-     "cover":"img/grulla_papel.webp",
+     "cover":["img/grulla_papel.webp","img/grulla_materiales.webp"],
      "alt": "Imagen de una grulla de papel hecha con origami, conectada a una batería"
     },
     {"title": "¡Circuitos LED usando papel!",
@@ -20,7 +20,7 @@
      "rating":"★★★★☆",
       "puntuation":4,
      "complexity":2,
-      "cover":"img/tarta_luces_led.webp",
+      "cover":["img/tarta_luces_led.webp","img/tarta_materiales.webp"],
      "alt": "Imagen de un papel con una pintura de un pastel, con las velas encendidas gracias a LEDs"
     },
     {"title": "Altavoces de papel",
@@ -32,7 +32,7 @@
      "rating":"★★★☆☆",
       "puntuation":3,
      "complexity":7,
-    "cover":"img/parlantes_papel.webp",
+    "cover":["img/parlantes_papel.webp","img/parlantes_materiales.webp"],
      "alt": "Imagen de papeles con espirales en ellos, los cuales servirán de parlantes"
     },
      {"title": "Lámpara de papel",
@@ -44,7 +44,7 @@
      "rating":"★★★★☆",
        "puntuation":4,
      "complexity":7.5,
-     "cover":"img/lampara_papel.webp",
+     "cover":["img/lampara_papel.webp","img/lampara_materiales.webp"],
      "alt": "Imagen de una lámara encendida, con tonos rosados, y hecha de papel"
     },
     {"title": "Parlante simple con Arduino",
@@ -56,7 +56,7 @@
      "rating":"★★★☆☆",
       "puntuation":3,
      "complexity":3,
-      "cover":"img/parlante_arduino.webp",
+      "cover":["img/parlante_arduino.webp","img/parlante_arduino.webp"],
      "alt": "Imagen de un parlante conectado a una placa de Arduino encendida"
     },
     {"title": "¡¿Pintando circuitos?!",
@@ -68,7 +68,7 @@
      "rating":"★★★★☆",
       "puntuation":4,
      "complexity":3,
-      "cover":"img/camion_bomberos.webp",
+      "cover":["img/camion_bomberos.webp","img/camion_materiales.webp"],
      "alt": "Dibujo de un camión de bomberos con sus focos encendidos por LEDs"
     }
     
